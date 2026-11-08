@@ -1,0 +1,54 @@
+surface	kana	romaji	translationRu	translationUz	page	category
+わたし	わたし	watashi	я	men	28	word
+わたしたち	わたしたち	watashitachi	мы	biz	28	word
+あなた	あなた	anata	вы; ты	siz (sen)	28	word
+あの人	あのひと	ano hito	тот человек	u kishi (u ayol (qiz))	28	word
+あの方	あのかた	ano kata	тот человек (уважительно)	あのひと ning hurmat shakli	28	word
+皆さん	みなさん	minasan	все; дамы и господа	xonimlar va janoblar, hamma, sizlar	28	word
+～さん	～さん	-san	вежливое обращение после имени	janob, xonim	28	suffix
+～ちゃん	～ちゃん	-chan	ласкательное обращение, обычно к детям	～さん ning qisqartma hamda erkalash ko‘rinishidagi suffiksi. Odatda bolalarga nisbatan qo‘llaniladi.	28	suffix
+～君	～くん	-kun	фамильярный суффикс обращения	～さん ning qisqartma hamda erkalash ko‘rinishidagi suffiksi. Odatda bolalarga nisbatan qo‘llaniladi.	28	suffix
+～人	～じん	-jin	суффикс национальности	biror kishining millatini bildiradigan suffiks	28	suffix
+先生	せんせい	sensei	учитель; преподаватель (обращение)	ustoz	28	word
+教師	きょうし	kyoushi	учитель (профессия)	o‘qituvchi, domla	28	word
+学生	がくせい	gakusei	студент	talaba	28	word
+会社員	かいしゃいん	kaishain	сотрудник компании	firma xodimi, korxona xodimi	28	word
+社員	しゃいん	shain	сотрудник указанной компании	firma xodimi (korxona nomlari bilan qo‘llanadi. Masalan: IMCの社員)	28	word
+銀行員	ぎんこういん	ginkouin	сотрудник банка	bank xodimi	28	word
+医者	いしゃ	isha	врач	shifokor	28	word
+研究者	けんきゅうしゃ	kenkyuusha	исследователь; научный работник	tadqiqotchi, ilmiy-izlanuvchi	28	word
+エンジニア	エンジニア	enjinia	инженер	muhandis	28	word
+大学	だいがく	daigaku	университет; институт	universitet, institut	28	word
+病院	びょういん	byouin	больница	shifoxona, kasalxona	28	word
+電気	でんき	denki	электричество; свет	chiroq	28	word
+だれ	だれ	dare	кто	kim	28	word
+どなた	どなた	donata	кто (уважительно)	だれ ning hurmat shakli	28	word
+～歳	～さい	-sai	лет (возраст)	~yosh	29	suffix
+何歳	なんさい	nansai	сколько лет	necha yosh	29	word
+おいくつ	おいくつ	oikutsu	сколько вам лет (уважительно)	なんさい ning hurmat shakli	29	word
+はい	はい	hai	да	ha	29	word
+いいえ	いいえ	iie	нет	yo‘q	29	word
+失礼ですが	しつれいですが	shitsurei desu ga	простите, но…	Kechirasiz, ~	29	expression
+お名前は？	おなまえは？	onamae wa?	как вас зовут?	Ismingiz nima?	29	expression
+初めまして。	はじめまして。	hajimemashite.	рад познакомиться (при первой встрече)	O‘zimni tanishtirishga ruxsat bersangiz.	29	expression
+どうぞよろしく［お願いします］	どうぞよろしく［おねがいします］	douzo yoroshiku [onegaishimasu]	очень приятно; прошу любить и жаловать	Tanishganimdan xursandman	29	expression
+こちらは～さんです。	こちらは～さんです。	kochira wa …-san desu.	это господин / госпожа…	Bu kishi janob / xonim ~.	29	expression
+～から来ました。	～からきました。	… kara kimashita.	я приехал из…	Men ~(davlat nomi)dan kelganman	29	expression
+アメリカ	アメリカ	Amerika	США	Amerika, AQSH	29	place
+イギリス	イギリス	Igirisu	Великобритания	Angliya, Buyuk Britaniya	29	place
+インド	インド	Indo	Индия	Hindiston	29	place
+インドネシア	インドネシア	Indoneshia	Индонезия	Indoneziya	29	place
+韓国	かんこく	Kankoku	Южная Корея	Janubiy Koreya	29	place
+タイ	タイ	Tai	Таиланд	Tailand	29	place
+中国	ちゅうごく	Chuugoku	Китай	Xitoy	29	place
+ドイツ	ドイツ	Doitsu	Германия	Olmoniya	29	place
+日本	にほん	Nihon	Япония	Yaponiya	29	place
+フランス	フランス	Furansu	Франция	Fransiya	29	place
+ブラジル	ブラジル	Burajiru	Бразилия	Braziliya	29	place
+さくら大学	さくらだいがく	Sakura daigaku	университет Сакура (вымышленный)	universitet nomi (o‘ylab topilgan)	29	proper
+富士大学	ふじだいがく	Fuji daigaku	университет Фудзи (вымышленный)	universitet nomi (o‘ylab topilgan)	29	proper
+IMC	アイエムシー	ai emu shii	IMC (вымышленная компания)	kompaniya nomi (o‘ylab topilgan)	29	proper
+パワー電気	パワーでんき	Pawaa denki	Пауэр Дэнки (вымышленная компания)	kompaniya nomi (o‘ylab topilgan)	29	proper
+ブラジルエアー	ブラジルエアー	Burajiru eaa	Бразил Эйр (вымышленная компания)	kompaniya nomi (o‘ylab topilgan)	29	proper
+AKC	エーケーシー	ee kee shii	AKC (вымышленный институт)	institut nomi (o‘ylab topilgan)	29	proper
+神戸病院	こうべびょういん	Koube byouin	больница Кобэ (вымышленная)	shifoxona nomi (o‘ylab topilgan)	29	proper

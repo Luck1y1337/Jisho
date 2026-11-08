@@ -1,0 +1,26 @@
+{
+  "name": "jisho-band",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Offline Japanese learning for Xiaomi Smart Band 10",
+  "scripts": {
+    "build": "node tools/build.cjs",
+    "preview": "node tools/serve.cjs",
+    "test": "node --test tests/*.test.cjs",
+    "validate": "node tools/validate.cjs",
+    "prepare:data": "python tools/curate.py && python tools/import_sources.py && node tools/finalize-data.cjs",
+    "assets": "python tools/assets.py",
+    "test:ui": "node tools/check-ui.cjs",
+    "preview:build": "node tools/serve.cjs --build-only",
+    "test:native": "node tools/native-smoke.cjs"
+  },
+  "devDependencies": {
+    "aiot-toolkit": "2.0.5",
+    "esbuild": "0.25.12",
+    "playwright": "1.56.1",
+    "@aiot-toolkit/jsc": "1.0.3"
+  },
+  "engines": {
+    "node": "24.19.0"
+  }
+}

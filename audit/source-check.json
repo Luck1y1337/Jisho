@@ -1,0 +1,369 @@
+{
+  "pdf": "C:\\Users\\Luck1y\\Downloads\\Telegram Desktop\\Minna no Nihongo 1.pdf",
+  "pdfSha256": "0ce47c39a41a2b6df4e176e0f16068e1f055019fdda75a23034d8eac12c1ba32",
+  "sourceSha256": "250c2239bdcd905a74a7548f605f36af0d036e2774ec400afefaa050ebd57f40",
+  "pdfPages": 206,
+  "lessons": 25,
+  "vocabularyPages": 51,
+  "method": "character multiset excluding whitespace and section headings; visual review is separate",
+  "allCharacterInventoriesMatch": true,
+  "pages": [
+    {
+      "pdfPage": 28,
+      "nonWhitespaceCharacters": 818,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 29,
+      "nonWhitespaceCharacters": 646,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 34,
+      "nonWhitespaceCharacters": 770,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 35,
+      "nonWhitespaceCharacters": 493,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 40,
+      "nonWhitespaceCharacters": 532,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 41,
+      "nonWhitespaceCharacters": 411,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 46,
+      "nonWhitespaceCharacters": 689,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 47,
+      "nonWhitespaceCharacters": 702,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 52,
+      "nonWhitespaceCharacters": 551,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 53,
+      "nonWhitespaceCharacters": 801,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 58,
+      "nonWhitespaceCharacters": 514,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 59,
+      "nonWhitespaceCharacters": 504,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 64,
+      "nonWhitespaceCharacters": 616,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 65,
+      "nonWhitespaceCharacters": 624,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 70,
+      "nonWhitespaceCharacters": 642,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 71,
+      "nonWhitespaceCharacters": 774,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 76,
+      "nonWhitespaceCharacters": 492,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 77,
+      "nonWhitespaceCharacters": 522,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 82,
+      "nonWhitespaceCharacters": 470,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 83,
+      "nonWhitespaceCharacters": 498,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 88,
+      "nonWhitespaceCharacters": 738,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 89,
+      "nonWhitespaceCharacters": 574,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 94,
+      "nonWhitespaceCharacters": 416,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 95,
+      "nonWhitespaceCharacters": 717,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 96,
+      "nonWhitespaceCharacters": 35,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 100,
+      "nonWhitespaceCharacters": 678,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 101,
+      "nonWhitespaceCharacters": 586,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 106,
+      "nonWhitespaceCharacters": 598,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 107,
+      "nonWhitespaceCharacters": 257,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 112,
+      "nonWhitespaceCharacters": 588,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 113,
+      "nonWhitespaceCharacters": 218,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 118,
+      "nonWhitespaceCharacters": 696,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 119,
+      "nonWhitespaceCharacters": 663,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 124,
+      "nonWhitespaceCharacters": 687,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 125,
+      "nonWhitespaceCharacters": 305,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 130,
+      "nonWhitespaceCharacters": 501,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 131,
+      "nonWhitespaceCharacters": 215,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 136,
+      "nonWhitespaceCharacters": 545,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 137,
+      "nonWhitespaceCharacters": 264,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 142,
+      "nonWhitespaceCharacters": 680,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 143,
+      "nonWhitespaceCharacters": 359,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 148,
+      "nonWhitespaceCharacters": 684,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 149,
+      "nonWhitespaceCharacters": 276,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 154,
+      "nonWhitespaceCharacters": 353,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 155,
+      "nonWhitespaceCharacters": 381,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 160,
+      "nonWhitespaceCharacters": 748,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 161,
+      "nonWhitespaceCharacters": 426,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 166,
+      "nonWhitespaceCharacters": 566,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 167,
+      "nonWhitespaceCharacters": 159,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 172,
+      "nonWhitespaceCharacters": 359,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    },
+    {
+      "pdfPage": 173,
+      "nonWhitespaceCharacters": 360,
+      "characterInventoryMatches": true,
+      "onlyInMarkdown": {},
+      "onlyInPdfText": {}
+    }
+  ]
+}

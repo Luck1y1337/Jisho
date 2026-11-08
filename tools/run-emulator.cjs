@@ -1,0 +1,8 @@
+const fs=require('fs'),path=require('path'),os=require('os'),{spawn}=require('child_process');
+const {VvdManager}=require('@aiot-toolkit/emulator/lib/vvd');
+const source=String.raw`C:\Users\Luck1y\Desktop\Game Mi Band\.tools\vela\sdk`,base=path.resolve('.tools/vela'),image=path.join(base,'image-v4'),vvd=path.join(os.homedir(),'.vela/vvd');
+async function main(){fs.mkdirSync(image,{recursive:true});for(const name of ['nuttx','vela_data.bin','vela_system.bin','advancedFeatures.ini']){const dst=path.join(image,name);if(!fs.existsSync(dst))fs.copyFileSync(path.join(source,'system-images/vela-pre-4.0',name),dst)}
+const m=new VvdManager({sdkHome:source,vvdHome:vvd});m.createVvd({name:'Jisho_Band10',arch:'arm',width:212,height:520,shape:'pill-shaped',flavor:'watch',density:320,imageDir:image,imageType:'vela-pre-4.0',customLcdRadius:106});
+await m.getVvdStartCmd({vvdName:'Jisho_Band10',qtHideWindow:true,grpcPort:8564,debugPort:10065});
+const log=fs.openSync(path.join(base,'emulator.log'),'a');const args=['-vela','-avd','Jisho_Band10','-show-kernel','-network-user-mode-options','hostfwd=tcp:127.0.0.1:10065-10.0.2.15:101','-no-window','-grpc','8564','-ports','5592,5593','-no-snapshot','-qemu','-device','virtio-snd,bus=virtio-mmio-bus.2','-allow-host-audio','-semihosting'];
+const p=spawn(path.join(source,'emulator/windows-x86_64/emulator.exe'),args,{cwd:source,env:{...process.env,ANDROID_AVD_HOME:vvd,ANDROID_SDK_ROOT:source,ANDROID_EMULATOR_HOME:base,VELA_AVD_HOME:vvd},stdio:['ignore',log,log],detached:true,windowsHide:true});p.unref();fs.writeFileSync(path.join(base,'pid.json'),JSON.stringify({pid:p.pid}));console.log('Jisho emulator PID',p.pid)}main().catch(e=>{console.error(e);process.exitCode=1});

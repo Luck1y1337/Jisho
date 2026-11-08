@@ -1,0 +1,9 @@
+{
+  "previousVersion": "1.0.0",
+  "version": "1.0.1",
+  "sameEmbeddedCertificate": true,
+  "samePackageId": true,
+  "versionCode": 2,
+  "storageSchema": 1,
+  "physicalUpdateTested": false
+}

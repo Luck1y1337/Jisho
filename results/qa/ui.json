@@ -1,0 +1,18 @@
+{
+  "checks": 406,
+  "actualClickSettingsRetained": true,
+  "wordFourRegression": true,
+  "minActionHeight": 60,
+  "minPagingHeight": 56,
+  "backHeight": 52,
+  "jsErrors": [],
+  "viewports": [
+    375,
+    812,
+    1100,
+    1440
+  ],
+  "settingsCombinations": 24,
+  "lessons": 25,
+  "physicalDevice": false
+}

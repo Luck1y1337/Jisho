@@ -1,0 +1,26 @@
+{
+  "emulator": "vela-pre-4.0 / 20250225",
+  "resolution": "212x520",
+  "releasePackage": true,
+  "scenarios": [
+    "dictionary",
+    "word-four regression",
+    "larger two-column paging",
+    "settings",
+    "large text",
+    "glyphs",
+    "central swipe",
+    "translation-to-Japanese",
+    "reveal",
+    "grade",
+    "guest reboot",
+    "resume"
+  ],
+  "pixelIdenticalResume": true,
+  "backingStoreSessionIdentical": true,
+  "wordFourSavedPositionVerified": true,
+  "physicalDevice": false,
+  "physicalPreviousVersionPhoto": true,
+  "gestureNeedsVisualReview": false,
+  "centralSwipeRecognized": true
+}

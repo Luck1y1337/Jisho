@@ -1,0 +1,8 @@
+const fs=require('fs'),assert=require('assert/strict'),corpus=require('../data/full-corpus.json'),numbers=require('../src/shared/numbers'),refs=require('../src/shared/reference');
+const ids=new Set();for(const w of corpus.words){assert(!ids.has(w.id));ids.add(w.id);for(const k of ['surface','kana','romaji','translationRu','translationUz'])assert(typeof w[k]==='string'&&w[k].trim(),w.id+' '+k);assert(!/[一-鿿々]/.test(w.kana),w.id+' incomplete kana');assert(!/[ぁ-ゖァ-ヺ一-鿿]/.test(w.romaji),w.id+' incomplete romaji')}
+for(let n=1;n<=25;n++){assert(corpus.words.some(w=>w.lessonId===n));assert(corpus.grammar.filter(g=>g.lessonId===n).length>=4);const data=JSON.parse(fs.readFileSync('src/assets/lessons/'+String(n).padStart(2,'0')+'.json','utf8'));assert.equal(data.words.length,corpus.words.filter(w=>w.lessonId===n).length)}
+for(const g of corpus.grammar)for(const k of ['title','ru','uz','jp','kana','romaji','exampleRu','exampleUz'])assert(g[k]&&g[k].trim(),g.id+' '+k);
+assert.equal(corpus.lessons[11].sourcePages.at(-1).page,96);
+for(const g of numbers)for(const w of g.words)for(const k of ['surface','kana','romaji','translationRu','translationUz'])assert(w[k]&&w[k].trim());
+assert(refs.hiragana.length>=26);assert(refs.verbs.length>=15);
+fs.mkdirSync('results/qa',{recursive:true});fs.writeFileSync('results/qa/content.json',JSON.stringify({lessons:25,words:corpus.words.length,grammarTopics:corpus.grammar.length,numberCards:numbers.reduce((n,g)=>n+g.words.length,0),passed:true},null,2));console.log('Content validated:',corpus.words.length,'words;',corpus.grammar.length,'grammar topics');

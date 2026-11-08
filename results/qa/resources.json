@@ -1,0 +1,11 @@
+{
+  "version": "1.0.1",
+  "scope": "curated words, grammar, numbers, reference and new navigation labels",
+  "missingGlyphs": [],
+  "iconSize": [
+    192,
+    192
+  ],
+  "transparentCorners": true,
+  "fontBytes": 235304
+}

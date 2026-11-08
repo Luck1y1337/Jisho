@@ -1,0 +1,10 @@
+{
+  "version": "1.0.1",
+  "freshExtraction": true,
+  "fixedDependenciesReused": true,
+  "testsPassed": 29,
+  "contentValidation": true,
+  "previewBuild": true,
+  "releaseBuild": true,
+  "privateKeyExcluded": true
+}

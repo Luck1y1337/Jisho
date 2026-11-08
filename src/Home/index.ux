@@ -1,0 +1,50 @@
+<template>
+ <div class="page">
+  <text class="title" style="{{titleStyle}}">{{title}}</text>
+  <text class="subtitle">{{subtitle}}</text>
+  <div class="body" style="{{bodyStyle}}" ontouchstart="gestureStart" ontouchmove="gestureMove" ontouchend="gestureEnd"><text for="{{lines}}" class="bodyText" ontouchstart="gestureStart" ontouchmove="gestureMove" ontouchend="gestureEnd" style="{{$item.style}}">{{$item.text}}</text></div>
+  <text class="status">{{status}}</text>
+  <div class="actions" style="{{actionsStyle}}"><text for="{{buttons}}" class="button" style="{{$item.style}}" onclick="choose($idx)">{{$item.display}}</text></div>
+  <div class="footer"><div class="paging"><text class="nav" style="{{prevStyle}}" onclick="previous">{{prevLabel}}</text><text class="nav" style="{{moreStyle}}" onclick="more">{{moreLabel}}</text></div><text class="back" style="{{backStyle}}" onclick="back">{{backLabel}}</text></div>
+ </div>
+</template>
+<script>
+import storage from '@system.storage';
+
+var Controller=null,P=null;
+var app=null,actionPage=0,prevAction=null,nextAction=null,gesture=null,bodyKey='',buttonKey='';
+export default {
+ private:{title:'Jisho',subtitle:'',body:'',lines:[],status:'Загрузка…',buttons:[],backLabel:'',prevLabel:'',moreLabel:'',bodyStyle:'',actionsStyle:'',titleStyle:'',prevStyle:'',moreStyle:'',backStyle:''},
+ onInit(){bodyKey='';buttonKey='';var self=this;try{Controller=require('../shared/controller');P=require('../shared/presentation');app=Controller.create({get:function(key){return new Promise(function(resolve,reject){storage.get({key:'jisho-'+key,success:resolve,fail:reject})})},set:function(key,value){return new Promise(function(resolve,reject){storage.set({key:'jisho-'+key,value:value,success:resolve,fail:reject})})}},function(n){return Promise.resolve(require('../shared/packed')(n))});app.onChange(function(){self.render()});app.load();}catch(e){this.title='Ошибка запуска';this.lines=[{text:String(e),style:'font-size:16px;'}];this.status='Диагностика';}},
+ render(){var v=app.view(),f=P.frame(v,actionPage);actionPage=f.index;prevAction=f.prev;nextAction=f.more;this.title=P.compact(v.title);this.titleStyle='font-size:'+P.titleSize(P.compact(v.title))+'px;';this.subtitle=v.subtitle;var newBody=v.lines.join('\n')+'|'+v.large;if(bodyKey!==newBody){bodyKey=newBody;this.lines=v.lines.map(function(t){return {text:t,style:'font-size:'+P.fontSize(t,v.large)+'px;line-height:'+P.lineHeight(v.large)+'px;'};});}this.bodyStyle='height:'+f.bodyHeight+'px;';this.actionsStyle='height:'+f.actionsHeight+'px;';this.status=f.status;var newButtons=JSON.stringify(f.buttons);if(buttonKey!==newButtons){buttonKey=newButtons;this.buttons=f.buttons.map(function(a){return Object.assign({},a,{display:P.label(a.label).text,style:'background-color:#22372B;font-size:'+P.label(a.label).size+'px;'});});}this.backLabel=v.back?'Назад':'';this.prevLabel=f.prevLabel;this.moreLabel=f.moreLabel;this.prevStyle='background-color:'+(prevAction?'#22372B':'#080C0B')+';';this.moreStyle='background-color:'+(nextAction?'#22372B':'#080C0B')+';';this.backStyle='background-color:'+(this.backLabel?'#18211E':'#080C0B')+';';},
+ acceptTap(){return true;},
+ choose(i){var a=this.buttons[i];if(a&&this.acceptTap()){if(a.action!=='setting'&&a.action!=='save')actionPage=0;app.act(a.action,a.arg)}},
+ back(){if(app.view().back&&this.acceptTap()){actionPage=0;app.act('back')}},
+ navigate(a){if(!a||!this.acceptTap())return;if(a.action==='group'){actionPage=a.arg;this.render()}else{actionPage=0;app.act(a.action,a.arg)}},
+ previous(){this.navigate(prevAction)},
+ more(){this.navigate(nextAction)},
+ point(e){e=e.detail||e;var p=e.changedTouches&&e.changedTouches[0]||e.touches&&e.touches[0]||e;var x=p.clientX===undefined?(p.pageX===undefined?p.x:p.pageX):p.clientX,y=p.clientY===undefined?(p.pageY===undefined?p.y:p.pageY):p.clientY;if(x===undefined||y===undefined)return null;return {x:x,y:y};},
+ gestureStart(e){var p=this.point(e);gesture=p&&p.x>=24&&p.x<=188?{x:p.x,y:p.y,last:p,time:Date.now()}:null;},
+ gestureMove(e){if(gesture){var p=this.point(e);if(p)gesture.last=p;}},
+ gestureEnd(e){var g=gesture;gesture=null;if(!g)return;var p=this.point(e)||g.last,dy=p.y-g.y,dx=p.x-g.x;if(Date.now()-g.time<=1200&&Math.abs(dy)>=36&&Math.abs(dx)<Math.abs(dy)*0.7){actionPage=0;app.swipe(dy<0?'up':'down');}},
+ onBackPress(){if(app&&app.view().back){this.back();return true}return false},
+ onShow(){if(app)this.render()},
+ onHide(){gesture=null;if(app)app.flush()}
+};
+</script>
+<style>
+@font-face{font-family:Jisho;src:url('/assets/fonts/Jisho.ttf');}
+.page{width:212px;height:520px;background-color:#080C0B;flex-direction:column;align-items:center;padding-top:26px;padding-bottom:28px;padding-left:16px;padding-right:16px;}
+text{font-family:Jisho;color:#F4F7F5;}
+.title{width:160px;height:48px;font-size:22px;line-height:22px;text-align:center;}
+.subtitle{width:180px;height:20px;font-size:16px;line-height:18px;text-align:center;color:#B4C5BC;}
+.body{width:180px;flex-direction:column;justify-content:center;}
+.bodyText{width:180px;color:#F4F7F5;}
+.status{width:180px;height:20px;font-size:14px;text-align:center;color:#B4C5BC;}
+.actions{width:180px;flex-direction:column;justify-content:flex-end;}
+.button{width:180px;height:60px;margin-top:8px;font-size:20px;line-height:24px;text-align:center;color:#D1F2DB;border-radius:16px;}
+.footer{height:116px;width:180px;margin-top:8px;flex-direction:column;align-items:center;}
+.paging{height:56px;width:180px;flex-direction:row;justify-content:space-between;}
+.nav{height:56px;width:86px;font-size:22px;line-height:26px;text-align:center;color:#D1F2DB;border-radius:16px;}
+.back{height:52px;width:140px;margin-top:8px;font-size:20px;text-align:center;color:#D1F2DB;border-radius:16px;}
+</style>

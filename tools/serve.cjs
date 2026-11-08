@@ -1,0 +1,7 @@
+const http=require('http'),fs=require('fs'),path=require('path'),esbuild=require('esbuild');
+const root=path.resolve(__dirname,'..'),dest=path.join(root,'dist','preview');fs.mkdirSync(dest,{recursive:true});
+esbuild.buildSync({entryPoints:[path.join(root,'preview/main.js')],bundle:true,outfile:path.join(dest,'app.js'),platform:'browser',target:'es2018'});
+for(const f of ['index.html','style.css'])fs.copyFileSync(path.join(root,'preview',f),path.join(dest,f));
+for(const [a,b] of [['src/assets/icon.svg','icon.svg'],['src/assets/fonts/Jisho.ttf','Jisho.ttf']])fs.copyFileSync(path.join(root,a),path.join(dest,b));
+fs.cpSync(path.join(root,'src/assets/lessons'),path.join(dest,'lessons'),{recursive:true});
+if(!process.argv.includes('--build-only'))http.createServer((req,res)=>{let name;try{name=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch(e){res.writeHead(400).end();return}const file=path.resolve(dest,'.'+(name==='/'?'/index.html':name));if(!file.startsWith(dest+path.sep)){res.writeHead(403).end();return}if(!fs.existsSync(file)||fs.statSync(file).isDirectory()){res.writeHead(404).end();return}const type={'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.ttf':'font/ttf'};res.writeHead(200,{'Content-Type':type[path.extname(file)]||'application/octet-stream'});fs.createReadStream(file).pipe(res)}).listen(4173,'127.0.0.1',()=>console.log('Jisho: http://127.0.0.1:4173'));

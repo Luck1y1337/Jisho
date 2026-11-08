@@ -1,0 +1,253 @@
+[
+  {
+    "lesson": 1,
+    "sourcePages": [
+      28,
+      29
+    ],
+    "entries": 54,
+    "scoredEntries": 47,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 2,
+    "sourcePages": [
+      34,
+      35
+    ],
+    "entries": 47,
+    "scoredEntries": 47,
+    "grammarTopics": 6
+  },
+  {
+    "lesson": 3,
+    "sourcePages": [
+      40,
+      41
+    ],
+    "entries": 47,
+    "scoredEntries": 41,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 4,
+    "sourcePages": [
+      46,
+      47
+    ],
+    "entries": 63,
+    "scoredEntries": 54,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 5,
+    "sourcePages": [
+      52,
+      53
+    ],
+    "entries": 59,
+    "scoredEntries": 55,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 6,
+    "sourcePages": [
+      58,
+      59
+    ],
+    "entries": 54,
+    "scoredEntries": 52,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 7,
+    "sourcePages": [
+      64,
+      65
+    ],
+    "entries": 48,
+    "scoredEntries": 46,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 8,
+    "sourcePages": [
+      70,
+      71
+    ],
+    "entries": 62,
+    "scoredEntries": 57,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 9,
+    "sourcePages": [
+      76,
+      77
+    ],
+    "entries": 51,
+    "scoredEntries": 50,
+    "grammarTopics": 4
+  },
+  {
+    "lesson": 10,
+    "sourcePages": [
+      82,
+      83
+    ],
+    "entries": 49,
+    "scoredEntries": 47,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 11,
+    "sourcePages": [
+      88,
+      89
+    ],
+    "entries": 62,
+    "scoredEntries": 61,
+    "grammarTopics": 4
+  },
+  {
+    "lesson": 12,
+    "sourcePages": [
+      94,
+      95,
+      96
+    ],
+    "entries": 51,
+    "scoredEntries": 45,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 13,
+    "sourcePages": [
+      100,
+      101
+    ],
+    "entries": 42,
+    "scoredEntries": 39,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 14,
+    "sourcePages": [
+      106,
+      107
+    ],
+    "entries": 41,
+    "scoredEntries": 40,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 15,
+    "sourcePages": [
+      112,
+      113
+    ],
+    "entries": 28,
+    "scoredEntries": 27,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 16,
+    "sourcePages": [
+      118,
+      119
+    ],
+    "entries": 54,
+    "scoredEntries": 46,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 17,
+    "sourcePages": [
+      124,
+      125
+    ],
+    "entries": 38,
+    "scoredEntries": 38,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 18,
+    "sourcePages": [
+      130,
+      131
+    ],
+    "entries": 29,
+    "scoredEntries": 28,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 19,
+    "sourcePages": [
+      136,
+      137
+    ],
+    "entries": 31,
+    "scoredEntries": 30,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 20,
+    "sourcePages": [
+      142,
+      143
+    ],
+    "entries": 29,
+    "scoredEntries": 29,
+    "grammarTopics": 4
+  },
+  {
+    "lesson": 21,
+    "sourcePages": [
+      148,
+      149
+    ],
+    "entries": 38,
+    "scoredEntries": 37,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 22,
+    "sourcePages": [
+      154,
+      155
+    ],
+    "entries": 24,
+    "scoredEntries": 20,
+    "grammarTopics": 4
+  },
+  {
+    "lesson": 23,
+    "sourcePages": [
+      160,
+      161
+    ],
+    "entries": 34,
+    "scoredEntries": 29,
+    "grammarTopics": 4
+  },
+  {
+    "lesson": 24,
+    "sourcePages": [
+      166,
+      167
+    ],
+    "entries": 19,
+    "scoredEntries": 18,
+    "grammarTopics": 5
+  },
+  {
+    "lesson": 25,
+    "sourcePages": [
+      172,
+      173
+    ],
+    "entries": 17,
+    "scoredEntries": 17,
+    "grammarTopics": 5
+  }
+]
